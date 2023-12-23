@@ -3,6 +3,7 @@ import React from 'react';
 import Slider from "react-slick";
 //import {faStar } from "react-icons/fa";
 import {FaStar } from "react-icons/fa";
+import Header from './header';
 
 const Home = () => {
     const settings = {
@@ -50,6 +51,7 @@ function SampleNextArrow(props) {
   
   return (
     <div>
+        <Header/>
         <section>
         <div className="col-md-12" style={{ backgroundColor:'#0648a8'}}>
             <div className="row">

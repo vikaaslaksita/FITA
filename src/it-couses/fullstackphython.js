@@ -1,9 +1,11 @@
 import React from 'react';
+import '../App.css';
+import Image from "../Images/py.webp";
 
 function Fullstackphython() {
   return (
-    <div>
-      <h1>this page is comming soon !</h1>
+    <div className='py'>
+    <img src={Image} alt="py" />
     </div>
   );
 }

@@ -2,11 +2,12 @@
 
 // function import 'react-native'
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { Link } from 'react-router-dom';
+//import renderer from 'react-test-renderer'
 //import signup from '../signup';
 
 
-function signup() {
+function Signup() {
  
 
 
@@ -48,16 +49,15 @@ function signup() {
 					<input className="input-field input_css degree_css degree_right pull-right fr" type="password" placeholder="10th %" name="psw"/>
 				  </div>
 				  <button type="submit" className="btn btn-primary p-2 signup_css " style={{}}>Sign Up</button>
-				  <a href="Login.html"></a><p className="f-blue1 p-1 text-center">Already have an Account ? Sign In</p>
+				  <Link to="/login"></Link><p className="f-blue1 p-1 text-center">Already have an Account ? Sign In</p>
 				 
 			</form>
 			</div>
 		</div> 
 		<div className="col-md-7" >	
 		<img align="middle" src="./Images/img3.png" className="img-fluid"  alt="Responsive image"
-				style={{height:"620px",width:"100%"}}></img>
+				style={{height:"620px",width:"100%"}}/>
 		</div>
-
 
 
 

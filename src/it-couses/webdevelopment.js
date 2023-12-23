@@ -1,13 +1,12 @@
 import React from 'react'
-
-function webdevelopment() {
+import '../App.css';
+import Image from "../Images/web.png";
+function Webdevelopment() {
   return (
-    <div>
-
-        <h66>This Page is commimg soon !</h66>
-      
+    <div className='web'>
+     <img src={Image} alt="web" />
     </div>
   )
 }
 
-export default webdevelopment
+export default Webdevelopment;

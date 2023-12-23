@@ -1,23 +1,23 @@
-//import logo from './logo.svg';
-import './App.css';
-// import {Routes, Route} from 'React-router-dom';
-//import Home from './component/home';
-import Header from './component/header';
 
-function App() {
-  return (
-    <>  
-    {/*<Header/>
-      <Routes>
+// import React from 'react'
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import FullstackJava from './it-couses/fullstackjava';
+// import Fullstackphython from './it-couses/fullstackphython';
+// import Webdevelopment from './it-couses/webdevelopment';
+// import Softwaretesting from './it-couses/softwaretesting';
+// const App = () => {
+//   return (
+//     <div>
+//        <BrowserRouter>
+//        <Routes>
+//          <Route path='fullstackjava' element={<FullstackJava/>}/>
+//          <Route path='Fullstackphython' element={<Fullstackphython/>}/>
+//          <Route path='Webdevelopment' element={<Webdevelopment/>}/>
+//          <Route path='Softwaretesting' element={<Softwaretesting/>}/> 
+//       </Routes>
+//       </BrowserRouter>
+//     </div>
+//   )
+// }
 
-   <Route Path="/" element={<Home/>}/>
-   <Route Path="/" element={<Home/>}/>
-   <Route Path="/" element={<Home/>}/>
-   <Route Path="/" element={<Home/>}/>
-   </Routes> */}
-   </>
-
-  );
-}
-
-export default App;
+// export default App;

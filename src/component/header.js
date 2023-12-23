@@ -1,6 +1,6 @@
 import React from 'react';
 import '../stylesheet.css';
-// import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedinIn, FaYoutubeSquare } from "react-icons/fa";
 
@@ -26,8 +26,8 @@ const Header = () => {
                     </div>
                     <div className="col-md-2 p-1 m-0">
                         <h6 className="text-end text-white m-0  p-1">
-                          <a href="#login.js" class="text-white"style={{textDecoration:"none"}}> Login&nbsp;&nbsp;</a>
-                           <a href="#signup.js"class="text-white "style={{textDecoration:"none"}}>&nbsp;SignUp</a>
+                          <Link to="/login" class="text-white"style={{textDecoration:"none"}}> Login&nbsp;&nbsp;</Link>
+                           <Link to="/signup"class="text-white "style={{textDecoration:"none"}}>&nbsp;SignUp</Link>
                           </h6>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const Header = () => {
         <div className="container-fluid p-0">
         <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
   <div className="container-fluid" style={{height:"50px"}}>
-    <a className="navbar-brand" href="home.js"><img src="appteknow.png" className="logo-css" alt="img" style={{boxShadow:"1px 1px3px 4px #fff",height:'100px',width:'100px'}}/></a>
+    <Link className="navbar-brand" to="/"><img src="appteknow.png" className="logo-css" alt="img" style={{boxShadow:"1px 1px3px 4px #fff",height:'100px',width:'100px'}}/></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -50,46 +50,45 @@ const Header = () => {
             <li><a className="dropdown-item p-0" href="#"><a href="#">IT Courses</a>
             </a>
             <ul class="dropdown-menu dropdown-submenu " style={{top:"5px"}} >
-              <li>  <a href="/fullstack-java" class="dropdown-item">Full Stack Java</a> </li>
-              <li>  <a href="/fullstack-java" class="dropdown-item">Full Stack Phython </a> </li>
-              <li>   <a href="/fullstack-java" class="dropdown-item">Full Stack Web Development</a> </li>
-              <li>  <a class="dropdown-item" href="software-testing.js">Software Testing</a> </li>
+              <li>  <Link to="/fullstackjava" class="dropdown-item">Full Stack Java</Link> </li>
+              <li>  <Link to="/fullstackphython" class="dropdown-item">Full Stack Phython </Link> </li>
+              <li>   <Link to="/webdevelopment" class="dropdown-item">Full Stack Web Development</Link> </li>
+              <li>  <Link class="dropdown-item" to="/softwaretesting">Software Testing</Link> </li>
               </ul>
               
               </li>
                <li><div className="dropdown-divider"></div></li>
             <li><a className="dropdown-item " href="#">Non-IT Courses</a>
             <ul class="dropdown-menu dropdown-submenu">
-              <li>  <a class="dropdown-item" href="#">Digital Marketing</a> </li>
-              <li>  <a class="dropdown-item" href="#">Tally + GST</a> </li>
-              <li>  <a class="dropdown-item" href="#">Advance Ms-Office Suite</a> </li>
+              <li>  <Link class="dropdown-item" to="/DigitalMarketing">Digital Marketing</Link> </li>
+              <li>  <Link class="dropdown-item" to="/TallyGst">Tally + GST</Link> </li>
+              <li>  <Link class="dropdown-item" to="/AdvanceMsOffice">Advance Ms-Office Suite</Link> </li>
               </ul>
             
             </li>
             <li><div className="dropdown-divider"></div></li>
             <li><a className="dropdown-item" href="#">Complemenatry</a>
             <ul class="dropdown-menu dropdown-submenu">
-              <li>  <a class="dropdown-item" href="#">Softskills and Apptitude</a> </li>
-              <li>  <a class="dropdown-item" href="#">English Communication</a> </li>
-              <li>  <a class="dropdown-item" href="#">Interview Prapration</a> </li>
+              <li>  <Link class="dropdown-item" to="/SoftSkillApptitute">Softskills and Apptitude</Link> </li>
+              <li>  <Link class="dropdown-item" to="/EnglishCommunication">English Communication</Link> </li>
+              <li>  <Link class="dropdown-item" to="/InterviewPrepation">Interview Prapration</Link> </li>
               </ul>
             </li>
           </ul>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link  text-blue" style={{textDecoration:"none",color:"blue",fontWeight:'500'}} href="#" id="navbarDropdown" role="button"  aria-expanded="false">
-           INTERNSHIIPS
-          </a>
-          
+          <Link className="nav-link  text-blue" style={{textDecoration:"none",color:"blue",fontWeight:'500'}} to="/Internship" id="navbarDropdown" role="button"  aria-expanded="false">
+           INTERNSHIPS
+          </Link> 
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle text-blue" style={{textDecoration:"none",color:"blue",fontWeight:'500'}}  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            COMPANIES
           </a>
           <ul className="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">Hire  For Us </a></li>
+            <li><Link className="dropdown-item" to="/HireForUs">Hire  For Us </Link></li>
              <li><div className="dropdown-divider"></div></li>
-            <li><a className="dropdown-item" href="#">Corporate Training</a></li>
+            <li><Link className="dropdown-item" to="/CorporateTraining">Corporate Training</Link></li>
             
           </ul>
         </li>
@@ -98,11 +97,11 @@ const Header = () => {
            COLLEGES
           </a>
           <ul className="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">Technical Training</a></li>
+            <li><Link className="dropdown-item" to="/TechnicalTraining">Technical Training</Link></li>
              <li><div className="dropdown-divider"></div></li>
-            <li><a className="dropdown-item" href="#">Skills Trainings</a></li>
+            <li><Link className="dropdown-item" to="/SkillsTraining">Skills Trainings</Link></li>
             <li><div className="dropdown-divider"></div></li>
-            <li><a className="dropdown-item" href="#">OnCampus Drive</a></li>
+            <li><Link className="dropdown-item" to="/OnCampusDrive">OnCampus Drive</Link></li>
             
           </ul>
         </li>
@@ -111,11 +110,11 @@ const Header = () => {
           BRANCHES
           </a>
           <ul className="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">BTM Layout </a></li>
+            <li><Link className="dropdown-item" to="/BtmLayout">BTM Layout </Link></li>
             <li><div className="dropdown-divider"></div></li>
-            <li><a className="dropdown-item" href="#">Mysore</a></li>
+            <li><Link className="dropdown-item" to="/Mysore">Mysore</Link></li>
             <li><div className="dropdown-divider"></div></li>
-            <li><a className="dropdown-item" href="#">Nelamangala</a></li>
+            <li><Link className="dropdown-item" to="/Nelamangala ">Nelamangala</Link></li>
           </ul>
         </li>
         <li className="nav-item dropdown">
