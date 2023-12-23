@@ -37,8 +37,10 @@ import Internship from './Internship';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/FITA'>
+
       <Routes>
+
          <Route path="header" element={<Header/>} />
           <Route index element={<Home />} />
           <Route path="footer" element={<Footer />} />
